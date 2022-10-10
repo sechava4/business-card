@@ -1,22 +1,30 @@
 .Page {
-  background-color: #282c34;
+  background-color: #313640;
+  height: 100vh;
+  padding-top: 10px;
 }
 
 .App-container {
   background-color: #1a1b21;
+  /* center the card */
+
   margin: auto;
-  min-height: 100vh;
   width: 317px;
   border-radius: 4%;
+
+  /* Keep pic at the top and footer on the bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 /* Info secction */
 .profile-image {
   width: 100%;
-  margin: auto;
+  margin-bottom: 25px;
   border-top-left-radius: 4%;
   border-top-right-radius: 4%;
-  margin-bottom: 25px;
 }
 
 .profile-name {
@@ -32,6 +40,7 @@
 }
 
 .page-header {
+  /* Be able to set custom spacing between h1 - h2 - h3 */
   margin: 0;
   padding: 0;
 }
@@ -116,18 +125,22 @@ a {
 }
 
 /* Footer section */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer-container {
   margin-top: 20px;
+  margin-bottom: 0;
   height: 64px;
   background: #161619;
   border-radius: 0px 0px 10px 10px;
+}
+
+.footer {
+  /* Keep the logos equally spaced in the horizontal center */
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 317px;
+
+  margin-top: 20px;
+  /* position: absolute; */
 }
 
 .footer .social > a {
@@ -139,7 +152,12 @@ a {
   background: #918e9b;
   text-align: center;
   border-radius: 12%;
-  margin: 0 8px;
+
+  /* Space between the logos */
+  margin-left: 8px;
+  margin-right: 8px;
+
+  /* Inherit the background color */
   color: inherit;
   opacity: 0.75;
 }
