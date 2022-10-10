@@ -1,5 +1,3 @@
-import SocialMediaLogo from './SocialMediaLogo';
-
 const Footer = () => {
   return (
     <div className='footer-container'>
@@ -14,15 +12,10 @@ const Footer = () => {
           <a href='#'>
             <i className='fa fa-instagram'></i>
           </a>
-          <a href='#'>
+          <a href='https://github.com/sechava4' target='_blank' rel='noreferrer'>
             <i className='fa fa-github'></i>
           </a>
         </div>
-
-        {/* <SocialMediaLogo fa_class={'fa fa-twitter'}></SocialMediaLogo>
-      <SocialMediaLogo fa_class={'fa fa-facebook'}></SocialMediaLogo>
-      <SocialMediaLogo fa_class={'fa fa-instagram'}></SocialMediaLogo>
-      <SocialMediaLogo fa_class={'fa fa-github'}></SocialMediaLogo> */}
       </footer>
     </div>
   );
